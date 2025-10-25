@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1><mark style="background-color: aqua;">Cadastro de cliente</mark></h1>
+    <p>Preencha os campos abaixo para registrar seu interesse nos serviços da nossa empresa.</p>
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email "name="email" placeholder="exemplo@gmail.com" required>
+      <label for="senha">Crie uma senha:</label>
+      <input type="password" id="senha"name="senha" required>
+      <label for="Data">Data de Nascimento</label>
+      <input type="date"nome="Data" required>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Contato e localização</legend>
+        <label for="Telefone">Telefone</label>
+        <input type="tel"id="Telefone"placeholder="(00)00000-00000" required>
+        <label for="Cidades">Cidades:</label>
+        <input type="text"id="Cidades"name="Cidades" required>
+        <label for="Estados"id="Estados">Estados</label>
+        <select id="Estados" name="Estados" required>
+        <option value="">Selecione...</option>
+         
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+</select>
+        
+    
+        </select>
+        <label for=""></label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Preferências de Serviço</legend>
+
+        <p>Deseja receber novidades por e-mail?</p>
+        <form>
+
+    <input type="radio"name="opcao"value="sim"> sim
+    <input type="radio"name="opcao" value="não">não
+</form>
+
+<form>
+<p>Selecione os serviços de interesse:</p>
+<input type="checkbox">Desenvolvimento web
+<input type="checkbox">Design Digital
+<input type="checkbox">Redes de computadores
+</form>
+
+
+    </fieldset>
+    <form>
+    <p>Comentários</p>
+    <p>Deixe uma mensagem (opcional):</p>
+    <textarea name="mensagem" id="mensagem"rows="10"cols="40" placeholder="Digite suas observações. . ."></textarea>
+    <br>
+    <button type="submit">enviar Cadastro</button> <button type="reset">limpar</button>
+    </form>
+    
+</body>
+</html>
